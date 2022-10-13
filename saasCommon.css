@@ -32,13 +32,14 @@ body {
     height: 100vh;
     
 }
-
+/* ////////////////////////////////////// */
 .first-second-section {
     background-image: url("saas-project-assets/project_logo/topSection.svg");
     background-repeat: no-repeat;
-    background-size:cover;
-    background-position: left;
-    height: 115rem;
+    background-size: cover;
+    background-position: bottom;
+    height: 45rem;
+    width: 100%;
 }
 
 .sticky {
@@ -202,4 +203,82 @@ body {
   grid-column: 8/9;   
   grid-row: 5/7;
   place-self: center start;
+}
+
+/* ///////////////////////////////////////////// */
+.third-section {
+    margin-top: 8rem;
+    text-align: center;
+    
+}
+.third-section h1 {
+    font-weight: 700;
+}
+
+.third-section p {
+    font-weight: 500;
+    color: var(--midTextColor);
+    margin-bottom: 1.5rem;
+}
+
+/* /////////////////////////////////////// */
+
+.fourth-section {
+    display: flex;
+    padding-top: 2rem;
+    height: 25rem;
+    align-items: center;
+    width: 100%;
+    justify-content:center;
+    flex-wrap: wrap;
+
+}
+
+.fourth-section-flex {
+    justify-content:center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+}
+
+.fourth-section-card {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 13.625rem;
+    height: 19.375rem;
+    box-shadow: 0rem 0rem 1rem .25rem rgb(190, 188, 188);
+}
+
+.fourth-section-image-container {
+    height: 2rem;
+    width: 3rem;
+}
+
+.fourth-section-image-container img {
+    width: 100%;
+}
+
+.fourth-section-card h3 {
+    /* line-height: 0px; */
+    padding-bottom: 1rem;
+    margin-bottom: 0rem;
+}
+
+.fourth-section-card p {
+    line-height: 1.5rem;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    font-weight: 400;
+    color: var(--midTextColor);
+    margin-bottom: 1.5rem;
+}
+
+.fourth-section-card a {
+    padding-top: 0rem;
+    margin-top: 0rem;
+    color: var(--blueText);
+    font-size: large;
+    font-weight: 700;
 }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <?xml version="1.0" encoding="utf-8"?>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SaasWebsite</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="saasCommon.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7e81b99e96.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+            <div class="page-container">
+                <div class="first-second-section" id="first-second-section">
+                    <!-- //////////////////////////// -->
+                    <div class="header-nav" id="header-nav">
+                        <div class="left-head-nav">
+                            <div class="projectLogoContainer">
+                                <img class="projectLogo" src=".\saas-project-assets\project_logo\logo.svg" alt="projectLogo">
+                            </div>
+                        </div>
+                        <div class="right-head-nav">
+                            <a href="Home">Home</a>
+                            <a href="Features">Features</a>
+                            <a href="Learn">Learn</a>
+                            <a href="Pricing">Pricing</a>
+                            <a href="HireUs">Hire us</a>
+                            <button>Buy Now</button>
+                        </div>
+                    </div>
+                    <!-- //////////////////////////// -->                  
+                    <div class="second-section">
+
+                        <div class="left-second-section">
+                            <h1>Empowering teams with freedom</h1>
+                            <p>
+                                Own the unlimited power of the web development.
+                            </p>
+                            <button class="playButton">
+                                <i class="fa-solid fa-circle-play"></i>
+                                Play Video
+                            </button>
+                            <span>Learn more</span>
+                        </div>
+                  
+                        <div class="right-second-section">
+                            <div class="brandGrid">
+                                <div class="img-container google gOne">
+                                    <img src="saas-project-assets\logo_icons\google.png" alt="google">
+                                </div>
+                                <div class="img-container paypal">
+                                    <img src="saas-project-assets\logo_icons\paypal.jpg" alt="paypal">
+                                </div>
+                                <div class="img-container atlassian">
+                                    <img src="saas-project-assets\logo_icons\atlassian.png" alt="atlassian">
+                                </div>
+                                <div class="img-container google gTwo">
+                                    <img src="saas-project-assets\logo_icons\google-A.png" alt="google-A">
+                                </div>
+                                <div class="img-container weave">
+                                    <img src="saas-project-assets\logo_icons\weave.png" alt="weave">
+                                </div>
+                                <div class="img-container calendar">
+                                    <img src="saas-project-assets\logo_icons\calendar.png" alt="calendar">
+                                </div>
+                                <div class="img-container asana">
+                                    <img src="saas-project-assets\logo_icons\asana.png" alt="asana">
+                                </div>
+                            </div>
+                        </div>
+                    </div>           
+                    <!-- //////////////////////////// -->                  
+                </div>
+            </div>
+
+
+<script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the nav
+    var nav = document.getElementById("header-nav");
+   
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+    if (window.pageYOffset > 500) {
+        nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+    }
+</script>            
+    </body>
+</html>

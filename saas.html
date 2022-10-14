@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <!-- //////////////////////////// -->                  
-                    <div class="second-section">
+                    <div class="second-section" id="second-section">
 
                         <div class="left-second-section">
                             <h1>Empowering teams with freedom</h1>
@@ -75,8 +75,9 @@
                     </div>           
                     <!-- //////////////////////////// -->                           
                 </div> 
+                <!-- ////////////////////////////////////// -->
 
-                <div class="third-section">
+                <div class="third-section" id="third-section">
                     <h1>Key Benefits</h1>
                     <p>Design faster with growing array of beautiful templates</p>
                 </div> 
@@ -110,7 +111,7 @@
                             <div class="fourth-section-image-container">
                                 <img src="saas-project-assets\icons\premium.svg" alt="responsive">
                             </div>
-                            <h3>Premium</h3>
+                            <h3>Premium<span> <button class="sketch-button">sketch</button> </span></h3> 
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                             <a href="">Learn More</a>
                         </div>
@@ -126,10 +127,26 @@
                             <a href="">Learn More</a>
                         </div>
                     </div>
-
-
+                    <!--////////////////////////////////////  -->
+                    
                 </div>
                 
+                <div class="fifth-section">
+                    <div class="fifth-section-flex">
+                        <div class="fifth-section-left">
+                            <h2>Front makes you look at things from a different prospective</h2>
+                            <button class="playButton">
+                                <i class="fa-solid fa-circle-play"></i>
+                                Play Video
+                            </button>
+                        </div>
+                        <div class="fifth-section-right">
+                            <div class="banner-one-container">
+                                <img src="saas-project-assets\banners\banner_one.jpg" alt="bannerOne">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 <!-- page container -->
             </div>
@@ -138,18 +155,24 @@
 <script>
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() {myFunction()};
+    
+    var nav = document.getElementById("header-nav");
 
     // Get the nav
-    var nav = document.getElementById("header-nav");
-   
+    var thirdSection = document.getElementById("third-section");
+
+    // Get the offset position of the navbar
+    var sticky = thirdSection.offsetTop;
+
     // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function myFunction() {
-    if (window.pageYOffset > 500) {
+    if (window.pageYOffset >= sticky) {
         nav.classList.add("sticky");
-        } else {
+        }     else {
           nav.classList.remove("sticky");
         }
     }
+
 </script>            
     </body>
 </html>

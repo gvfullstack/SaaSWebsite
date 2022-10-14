@@ -396,7 +396,23 @@ hr {
     background-color: blue;
 }
 
-.seventh-section-container p {
+
+/* /////////////////////////////////////// */
+
+
+
+.eight-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
 }
 
+.eigth-section-image-container {
+    width: 60.25rem;
+    height: 25.875rem;
+}
 
+.eigth-section-image-container img {
+    width: 100%;
+}

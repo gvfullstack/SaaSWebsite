@@ -553,3 +553,15 @@ hr {
     color: var(--midTextColor);
     line-height: 0rem;
 }
+
+.tenthSection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+    }
+.tenthSection p {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--midTextColor);
+}

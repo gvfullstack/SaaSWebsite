@@ -575,7 +575,7 @@ hr {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 1rem 2rem;
+    margin: 1rem 0rem 2rem 0rem;
 }
 
 .eleventh-section-flex {
@@ -588,4 +588,26 @@ hr {
 .eleventh-logo-container {
     width: 6.721rem;
     height: 2.508125rem;
+}
+
+/* /////////////////////////////////////// */
+
+
+.twelfth-section {
+    text-align: center;
+    width: 100%;
+    margin: 4rem 0rem 4rem 0rem;
+}
+
+.twelfth-section h2 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.twelfth-section p {
+    font-weight: 500;
+    color: var(--midTextColor);
+    margin: .5rem;
+    padding: 0;
 }

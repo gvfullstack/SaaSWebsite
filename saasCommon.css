@@ -554,14 +554,38 @@ hr {
     line-height: 0rem;
 }
 
+/* /////////////////////////////////////// */
+
 .tenthSection {
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 1rem;
     }
+
 .tenthSection p {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1rem;
     color: var(--midTextColor);
+}
+
+/* /////////////////////////////////////// */
+
+.eleventh-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 2rem;
+}
+
+.eleventh-section-flex {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.eleventh-logo-container {
+    width: 6.721rem;
+    height: 2.508125rem;
 }

@@ -729,3 +729,177 @@ body {
         margin-top: -1rem;
         padding-top: 0rem;
     }
+
+/* /////////////////////////////////////// */
+
+.fourteenth-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #20335b;
+    padding: 0rem 2rem;
+}
+        /* /////////////////////////////////////// */
+
+    .fourteenth-section-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem 0rem 2rem 0rem;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+            .hire-us {
+                border-bottom: solid;
+                width:11.25rem; 
+                border-color: white;
+                border-width: .1rem;
+                margin-bottom: 1rem;
+            }
+            .hire-us h3{
+                font-size: 1.625rem;
+                font-weight: 700;
+                line-height: 1rem;
+                color: white;
+            }
+
+            .hire-us p {
+                font-size: 1rem;
+                line-height: 1rem;
+                color: var(--midTextColor);
+                margin-bottom: 1.5rem;
+            }
+
+            .quote {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-weight: 500;
+                font-style: italic;
+                color: white;
+                width: 22.688rem;
+                margin-bottom: 1rem;
+            }
+
+            .internal-contact h2 {
+                font-size: 1.125rem;
+                font-weight: 700;
+                line-height: 1rem;
+                color: white;
+            }
+
+            .internal-contact p {
+                font-size: 0.875rem;
+                line-height: 1.059rem;
+                color: var(--midTextColor);
+            }
+
+            .fourteenth-image-container{
+                display: flex;
+                align-items: center;
+            }
+
+                .fourteenth-image-card {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 30px;
+                    margin-right: 1rem;
+                    margin-top: 1rem;
+                }
+
+                .fic3 {
+                    width: 3.75rem;
+                    height: 3.75rem;
+                }
+
+                        .fourteenth-image-card img {
+                            width: 100%;
+                            border-radius: inherit;
+                        }
+        /* /////////////////////////////////////// */
+    .fourteenth-section-right {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0rem 2rem 0rem;
+        
+    }
+            .contact-form {
+                background-color: white;
+                width: 28.40625rem;
+                padding: 1.875rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: .625rem;
+                }
+
+                    .contact-form p {
+                        width: 24.5rem;
+                        font-weight: 700;
+                        font-size: 1rem;
+                        line-height: 1rem;
+                        margin-bottom: .5rem;
+                        }
+
+                    .contact-form input,
+                    .contact-form select {
+                        font-size: .875rem;
+                        font-weight: 510;
+                        line-height: 1.5rem;
+                        margin: 1rem 1rem 0rem 0rem;
+                        pad: 0rem;
+                        height: 3.2rem;
+                        width: 11rem;
+                        border-radius: .25rem;
+                        border-style: solid;
+                        border-color: rgb(227, 224, 224);
+                        }
+
+                    .contact-form textarea {
+                        font-size: .875rem;
+                        font-weight: 510;
+                        line-height: 1.5rem;
+                        border-radius: .25rem;
+                        border-style: solid;
+                        border-color: rgb(227, 224, 224);
+                        width: 23rem;
+                        margin: 1rem 0rem 0rem -1rem;
+                    }
+                    
+                    .contact-form div {
+                        display: flex;
+                        /* justify-content: space-between; */
+                    }
+
+                    .checkbox-section {
+                        width: 23rem;
+                        padding: 0rem;
+                        margin: 1rem 0rem 0rem -1rem;                      
+                    } 
+  
+                          .checkbox-section input {
+                                height: 1.5rem;
+                                border-radius: .25rem;
+                                margin: 0rem -1rem 0rem -2rem;
+                                padding: 0rem; 
+
+                            }
+                            .checkbox-section label {
+                                color: var(--midTextColor);
+                                margin: 0rem 0rem 0rem -.5rem;
+                                padding: 0rem;
+                                font-size: .875rem;
+                                font-weight: 510;
+                            }
+
+                    .privacy-policy {
+                        display: flex;
+                        width: 23rem;
+                        padding: 0rem 1rem 0rem 1rem;
+                        margin: -.5rem 0rem 0rem -1rem;
+                    }
+                    
+                        .privacy-policy p {
+                            text-align: center;
+                            text-decoration:dotted;
+                            text-decoration-line: underline;
+                        }

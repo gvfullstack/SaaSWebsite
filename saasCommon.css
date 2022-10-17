@@ -354,7 +354,6 @@ body {
 .fifth-section-left {
     width: 23rem;
     margin: 2rem 3rem 2rem 2rem;
-    background-color: antiquewhite;
 }
 
 /* /////// */
@@ -364,7 +363,6 @@ body {
     justify-content: end;
     min-width: 32rem; 
     padding-top: 2rem;
-    background-color: aqua;
 }
 
 .banner-one-container {
@@ -909,7 +907,6 @@ body {
 
 .fifteenth-section {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -923,7 +920,8 @@ body {
 }
 
 .fifteenth-section p,
-.fifteenth-section a{
+.fifteenth-section a,
+.fifteenth-section i{
     font-size: .875rem;
     color: var(--midTextColor);
     font-weight: 510;
@@ -934,6 +932,7 @@ body {
             display: flex;
             width: 100%;
             justify-content: space-around;
+            flex-wrap: wrap;
 
         }
 
@@ -959,7 +958,6 @@ body {
                         {
                             display: flex;
                             align-items: center;
-                            font-size: 0px;
                             margin: -1rem 0rem -1rem 0rem ;
 
                         }
@@ -973,4 +971,65 @@ body {
                         }
 
                      
+/* ///////////////////////////////////////////// */
+.section-sixteen-one{
+    display: flex;
+    margin: 2rem;
+    padding: 2rem 0rem;
+    justify-content: space-between;
+    border-top: 1px solid rgb(227, 224, 224);
+    ;
+}
+        .terms-socials-left{
+            display: flex;
+        }
+            .terms-socials-left p, 
+            .terms-socials-left a{
+                font-size: .875rem;
+                color: var(--midTextColor);
+                font-weight: 510;
+                margin-right: .5rem;
+            }      
+        
+        
+        .terms-socials-right{
+            display: flex;
+        }                
                        
+            .terms-socials-icon-container {
+                height: 1.87rem;
+                width: 1.87rem;
+                margin: 0rem .5rem;
+            }
+
+                    .terms-socials-icon-container img{
+                        width: 100%;
+                        height: 100%;
+                    }
+            
+            .country {
+                display: flex;
+                border-style: none;
+            }
+            
+            .country select {
+                background-color: aliceblue;
+                border-style: none;
+                height: 1.87rem;
+                width: 10.5rem;
+            }
+ 
+.section-sixteen-two{
+    display: flex;
+    justify-content: center;
+}            
+        .copywtight {
+            justify-self: center;
+            min-width: 43.75rem;
+            text-align: center;
+            font-size: .875rem;
+            color: var(--midTextColor);
+            font-weight: 510;
+            padding: 0rem 4rem;
+            margin-bottom: 2rem;
+        }

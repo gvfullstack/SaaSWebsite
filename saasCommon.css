@@ -1,10 +1,64 @@
+:root {
+    --lightBlueBackgroung:rgb(234, 234, 245);
+    --midTextColor: rgb(122, 121, 121);
+    --blueText: rgba(32, 109, 209, 0.925);
+    --blueButton: rgb(53, 112, 241);
+    --12px:0.75rem;
+    --14px: 0.875rem;
+    --16px: 1rem;
+    --16_94px:1.059rem;
+    --18px:1.125rem;
+    --20px:1.25rem;
+    --22px: 1.375rem;
+    --26px:1.625rem;
+    --40px: 2.5rem;
+    --50px: 3.125rem;
+}
+
+.font1 {
+    font-weight: 500;
+    font-size: var(--14px);
+    color: var(--midTextColor);
+}
+
+.font2 {
+    font-weight: 510;
+    font-size: var(--14px);
+    color: var(--midTextColor);
+}
+
+.font3 {
+    font-weight: 700;
+    font-size: var(--14px);
+    color:var(--blueText);
+}
+
+.font4 {
+    font-size: var(--26px);
+    font-weight: 700;
+}
+
+.font5 {
+    font-size: var(--16px);
+    font-weight: 500;
+    color: var(--midTextColor);
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+}    
+
+body {
+    margin: 0;
+}    
 
 a {
     text-decoration: none ;
+}    
+
+body a:hover {
+    color: var(--blueText);
 }
 
 button {
@@ -14,39 +68,32 @@ button {
     color: white;
     background-color: var(--blueButton);
     border-style: none;  
+}   
+
+.playButton {
+    width:9rem;
+    font-size: medium;
+    font-weight: 300;
 }
 
-
-:root {
-    --midTextColor: rgb(122, 121, 121);
-    --blueText: rgba(32, 109, 209, 0.925);
-    --blueButton: rgb(53, 112, 241);
+.sketch-button {
+    height: 1.4375rem;
+    width: 3.75rem;
+    margin-left: .5rem;
+    background-color: rgb(80, 207, 165);
+    font-size: var(--12px);
+    font-weight: 700;
+    padding: .25rem .625rem;
 }
 
-body {
-    margin: 0;
+img {
+    width: 100%;
 }
 
 .page-container {
     position: relative;
-    height: 100vh;
-    
-}
-
-.section-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    padding: 2rem;
-}
-
-.sub-section-container {
-    display: flex;
-    flex-wrap: wrap;
-    width:70%;
-    justify-content: space-between;
-}
+    height: 100vh;   
+}    
 
 
 /* ////////////////////////////////////// */
@@ -57,15 +104,23 @@ body {
     background-position: bottom;
     height: 45rem;
     width: 100%;
-}
+}    
 
 .sticky {
     position:fixed;
     top: 0;
     background-color: white;
     align-self:baseline;
-  }
-  
+}  
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding: 2rem;
+}    
+
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -73,33 +128,24 @@ body {
     width: 100%;
     height:7rem;
     z-index: 10;
-}
+}    
 
 .projectLogoContainer {
     padding: .5rem;
     height: 4rem;
     width: 10rem;
-}
+}    
 
-.projectLogo {
-    width: 100%;
-}
 
 .right-head-nav a {
     padding: .5rem;
-    color: var(--midTextColor);
-    font-size: large;
-    font-weight: 500;
-}
+}    
 
-.right-head-nav a:nth-child(2) {
-    color: var(--blueText);
-}
 
 .right-head-nav button {
     margin-left: 2.5rem;
-    font-size: medium;
-    font-weight: 500;
+    font-size: var(--12px);
+    font-weight: 700;
     margin: 1rem;
 }
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -113,25 +159,18 @@ body {
 }
 
 .left-second-section {
-    max-width: 50rem;
+    max-width: 20.875rem;
     padding-right: 1rem;
     margin-right: 3rem;
 }
 
 .left-second-section h1 {
-    font-size:xxx-large;
+    font-size:var(--40px);
     font-weight: 500;
     margin-bottom: 1rem;
 }
 .left-second-section p {
-    font-weight: 400;
-    color: var(--midTextColor);
     margin-bottom: 1.5rem;
-}
-.playButton {
-    width:9rem;
-    font-size: medium;
-    font-weight: 300;
 }
 
 .playButton i{
@@ -139,11 +178,9 @@ body {
     border-radius: 30rem;
 }
 
-.left-second-section span {
+.left-second-section a {
     padding-left: 1rem;
-    color: var(--blueText);
-    font-size: large;
-    font-weight: 700;
+    
 }
 
 /* //////////////////////////// */
@@ -237,13 +274,8 @@ body {
     text-align: center;
     
 }
-.third-section h1 {
-    font-weight: 700;
-}
 
 .third-section p {
-    font-weight: 500;
-    color: var(--midTextColor);
     margin-bottom: 1.5rem;
 }
 
@@ -294,7 +326,6 @@ body {
 }
 
 .fourth-section-card h3 {
-    /* line-height: 0px; */
     padding-bottom: 1rem;
     margin-bottom: 0rem;
 }
@@ -303,26 +334,13 @@ body {
     line-height: 1.5rem;
     padding-top: 0rem;
     margin-top: 0rem;
-    font-weight: 400;
-    color: var(--midTextColor);
     margin-bottom: 1.5rem;
 }
 
 .fourth-section-card a {
     padding-top: 0rem;
     margin-top: 0rem;
-    color: var(--blueText);
-    font-size: large;
-    font-weight: 700;
-}
-.sketch-button {
-    height: 1.4375rem;
-    width: 3.75rem;
-    margin-left: .5rem;
-    background-color: rgb(80, 207, 165);
-    font-size: .75rem;
-    font-weight: 700;
-    padding: .25rem .625rem;
+   
 }
 
 /* ///////////////////////////////////////// */
@@ -343,7 +361,7 @@ body {
 .fifth-section-flex {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(244, 244, 252);
+    background-color: var(--lightBlueBackgroung);
     margin-right: 2rem;
     padding: 4rem 0rem 0rem 0rem;
     width: 100%;
@@ -391,13 +409,7 @@ body {
     text-align: center;
 }
 
-.sixth-section h1 {
-    font-weight: 700;
-}
-
 .sixth-section p {
-    font-weight: 500;
-    color: var(--midTextColor);
     margin-bottom: 2rem;
 }
 
@@ -412,7 +424,7 @@ body {
 }
 
 .hr-blue {
-    border-top: 1px solid blue;
+    border-top: .20rem solid var(--lightBlueBackgroung);
     width: 9rem;
 }
 
@@ -436,12 +448,9 @@ body {
     height:5rem;
     width: 5rem;
     border-radius: 5rem;
-    background-color: rgb(234, 234, 245);
+    background-color: var(--lightBlueBackgroung);
     align-items: center;
     justify-content: center;
-    /* margin: -2.5em 0em 0em 0em; */
-    /* align-self: center; */
-
 }
 
 .inner-circle {
@@ -495,28 +504,29 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 5rem;
+    padding: 2rem;
 }
 
 .ninth-section-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:center;
     width: 100%;
-    padding: 2rem;
 
 }
 
 .ninth-left {
     background-image: url("saas-project-assets/abstract/dots.svg");
     background-repeat: no-repeat;
-    padding-left: 2rem;
+    padding-left: 3.5rem;
     padding-bottom: 3.5rem;
-    padding-right: 4rem;
+
 }
 
 .ninth-left-image-container {
     width: 23.188rem;
     height: 26.563rem;
+    margin-right: 4rem;
 }
 
 .ninth-left-image-container img{
@@ -544,22 +554,23 @@ body {
 
 .ninth-right p{
     width: 30.125rem;
-    font-weight: 400;
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: var(--22px);
     margin-bottom: 4rem;
 }
 
 .ninth-right :nth-child(3){
     width: 30.125rem;
-    font-size: 1rem;
-    line-height: 0rem;
+    font-size: var(--18px);
+    font-weight: 700;
+    line-height: var(--22px);
     margin-bottom: .4rem;
 }
 
 .ninth-right :nth-child(4){
     width: 30.125rem;
-    font-size: .79rem;
-    font-weight: 600;
+    font-size: var(--14px);
+    font-weight: 700;
     color: var(--midTextColor);
     line-height: 0rem;
 }
@@ -575,7 +586,7 @@ body {
 
 .tenthSection p {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: var(--20px);
     color: var(--midTextColor);
 }
 
@@ -610,14 +621,11 @@ body {
 }
 
 .twelfth-section h2 {
-    font-weight: 700;
     margin: 0;
     padding: 0;
 }
 
 .twelfth-section p {
-    font-weight: 500;
-    color: var(--midTextColor);
     margin: .5rem;
     padding: 0;
 }
@@ -656,9 +664,12 @@ body {
                 }
 
                         .tirteenth-left-card-top h1 {
-                            font-weight: 600;
+                            font-size: var(--50px);
+                            font-weight: 500;
                         }
                         .tirteenth-left-card-top p {
+                            font-size: var(--20px);
+                            font-weight: 510;
                             color: var(--midTextColor);
                         }
                         
@@ -666,9 +677,6 @@ body {
                         .tirteenth-left-card-bottom{}
                         
                         .tirteenth-left-card-bottom p {
-                            font-size: 1rem;
-                            font-weight: 500;
-                            color: var(--midTextColor);
                             margin-bottom: 2rem;
                             line-height: 1.5rem;
                             
@@ -679,12 +687,11 @@ body {
                         }
 
                         .tirteenth-left-card-bottom p:nth-child(3) {
-                            font-size: .75rem;
+                            font-size: var(--12px);
                             font-weight: 500;
                             color: var(--midTextColor);
                             margin-bottom: 2rem;
-                            line-height: .9075rem;
-                            
+                            line-height: .9075rem;    
                         }
 
 .thirteenth-section-grid {
@@ -702,8 +709,8 @@ body {
     }
 
         .thirteenth-right-img-container {
-            width: 2rem;
-            height: 2rem;
+            width: 3rem;
+            height: 3rem;
             margin-bottom: 0rem;
             padding-bottom: 0rem;
 
@@ -713,13 +720,12 @@ body {
                 }
 
         .grid-container h2 {
-            font-size: 1.125rem;
+            font-size: var(--18px);
             margin-bottom: 0rem;
             
         }
 
         .grid-container p {
-            font-size: .875rem;
             margin-top: 0rem;
         }
     
@@ -787,10 +793,8 @@ body {
             }
 
             .internal-contact p {
-                font-size: 0.875rem;
                 line-height: 1.059rem;
-                color: var(--midTextColor);
-            }
+                }
 
             .fourteenth-image-container{
                 display: flex;
@@ -841,8 +845,6 @@ body {
 
                     .contact-form input,
                     .contact-form select {
-                        font-size: .875rem;
-                        font-weight: 510;
                         line-height: 1.5rem;
                         margin: 1rem 1rem 0rem 0rem;
                         pad: 0rem;
@@ -854,8 +856,6 @@ body {
                         }
 
                     .contact-form textarea {
-                        font-size: .875rem;
-                        font-weight: 510;
                         line-height: 1.5rem;
                         border-radius: .25rem;
                         border-style: solid;
@@ -883,12 +883,9 @@ body {
 
                             }
                             .checkbox-section label {
-                                color: var(--midTextColor);
                                 margin: 0rem 0rem 0rem -.5rem;
                                 padding: 0rem;
-                                font-size: .875rem;
-                                font-weight: 510;
-                            }
+                                }
 
                     .privacy-policy {
                         display: flex;
@@ -918,15 +915,6 @@ body {
     font-size: 1.125rem;
     font-weight: 860;
 }
-
-.fifteenth-section p,
-.fifteenth-section a,
-.fifteenth-section i{
-    font-size: .875rem;
-    color: var(--midTextColor);
-    font-weight: 510;
-}
-
 
         .fifteenth-flex {
             display: flex;
@@ -985,10 +973,8 @@ body {
         }
             .terms-socials-left p, 
             .terms-socials-left a{
-                font-size: .875rem;
-                color: var(--midTextColor);
-                font-weight: 510;
                 margin-right: .5rem;
+                align-self: center;
             }      
         
         
@@ -1027,9 +1013,6 @@ body {
             justify-self: center;
             min-width: 43.75rem;
             text-align: center;
-            font-size: .875rem;
-            color: var(--midTextColor);
-            font-weight: 510;
             padding: 0rem 4rem;
             margin-bottom: 2rem;
         }

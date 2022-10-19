@@ -24,15 +24,34 @@
                                     <img class="projectLogo" src=".\saas-project-assets\project_logo\logo.svg" alt="projectLogo">
                                 </div>
                             </div>
-                            <div class="right-head-nav">
-                                <a class="font1" href="Home">Home</a>
-                                <a class="font1" href="Features">Features</a>
-                                <a class="font1" href="Learn">Learn</a>
-                                <a class="font1" href="Pricing">Pricing</a>
-                                <a class="font1" href="HireUs">Hire us</a>
-                                <button>Buy Now</button>
-                            </div>
+                            <nav class="right-head-nav">                             
+                                <ul class = "menu-list">
+                                    <li><a class="font1" href="Home">Home</a></li>                                   
+                                    <li><a class="font1" href="Features">Features</a></li>                                
+                                    <li><a class="font1" href="Learn">Learn</a></li>                                  
+                                    <li><a class="font1" href="Pricing">Pricing</a></li>
+                                    <li id="menu5"><a class="font1" href="HireUs">Hire us</a></li>
+                                    <button>Buy Now</button>
+                                </ul>
+                            </nav>
+
                         </div>
+
+                        <nav class="right-head-nav2">
+                            <button class="hamburger" aria-expanded="false" aria-controls="menu-list">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </button>
+                            <ul class = "menu-list">
+                                <li id="menu1"><a class="font1" href="google.com">Home</a></li>                                   
+                                <li id="menu2"><a class="font1" href="Features">Features</a></li>                                
+                                <li id="menu3"><a class="font1" href="Learn">Learn</a></li>                                  
+                                <li id="menu4"><a class="font1" href="Pricing">Pricing</a></li>
+                                <li id="menu5"><a class="font1" href="HireUs">Hire us</a></li>
+                                <button id="menu6">Buy Now</button>
+                            </ul>
+                        </nav>
                     </div>
                     <!-- //////////////////////////// -->                  
                     <!-- <div class="section-container"> -->
@@ -471,10 +490,25 @@
                         <p class="font2">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
                     </div>
                 </div>
+                            <!--////////////////////////////////////  -->
 
                 <!-- page container -->
             </div>
+                            <!--////////////////////////////////////  -->
 
+<script>
+
+const navButton = document.querySelector('button[aria-expanded]');
+        
+        function toggleNav({ target }) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            navButton.setAttribute('aria-expanded', !expanded)
+        }
+        
+        navButton.addEventListener('click',toggleNav)
+
+</script>
+                            <!--////////////////////////////////////  -->
 
 <script>
     // When the user scrolls the page, execute myFunction

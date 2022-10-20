@@ -36,22 +36,23 @@
                             </nav>
 
                         </div>
-
-                        <nav class="right-head-nav2">
-                            <button class="hamburger" aria-expanded="false" aria-controls="menu-list">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </button>
-                            <ul class = "menu-list">
-                                <li id="menu1"><a class="font1" href="google.com">Home</a></li>                                   
-                                <li id="menu2"><a class="font1" href="Features">Features</a></li>                                
-                                <li id="menu3"><a class="font1" href="Learn">Learn</a></li>                                  
-                                <li id="menu4"><a class="font1" href="Pricing">Pricing</a></li>
-                                <li id="menu5"><a class="font1" href="HireUs">Hire us</a></li>
-                                <button id="menu6">Buy Now</button>
-                            </ul>
-                        </nav>
+                        <div class="right-head-nav2-flex">
+                            <nav class="right-head-nav2">
+                                <button class="hamburger" aria-expanded="false" aria-controls="menu-list">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </button>
+                                <ul class = "menu-list">
+                                    <li id="menu1"><a class="font1" href="google.com">Home</a></li>                                   
+                                    <li id="menu2"><a class="font1" href="Features">Features</a></li>                                
+                                    <li id="menu3"><a class="font1" href="Learn">Learn</a></li>                                  
+                                    <li id="menu4"><a class="font1" href="Pricing">Pricing</a></li>
+                                    <li id="menu5"><a class="font1" href="HireUs">Hire us</a></li>
+                                    <button id="menu6">Buy Now</button>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                     <!-- //////////////////////////// -->                  
                     <!-- <div class="section-container"> -->
@@ -62,37 +63,39 @@
                                 <p class="font1">
                                     Own the unlimited power of the web development.
                                 </p>
-                                <button class="playButton">
-                                    <i class="fa-solid fa-circle-play"></i>
-                                    Play Video
-                                </button>
-                                <a href="" class="font3">Learn more</a>
+                               <div class="play-button-section">
+                                   <button class="playButton">
+                                       <i class="fa-solid fa-circle-play"></i>
+                                       Play Video
+                                   </button>
+                                   <a href="" class="font3">Learn more</a>
+                               </div>
                             </div>
                     
                             <div class="right-second-section">
-                                <div class="brandGrid">
-                                    <div class="img-container google gOne">
-                                        <img src="saas-project-assets\logo_icons\google.png" alt="google">
+                                    <div class="brandGrid">
+                                        <div class="img-container google gOne">
+                                            <img src="saas-project-assets\logo_icons\google.png" alt="google">
+                                        </div>
+                                        <div class="img-container paypal">
+                                            <img src="saas-project-assets\logo_icons\paypal.jpg" alt="paypal">
+                                        </div>
+                                        <div class="img-container atlassian">
+                                            <img src="saas-project-assets\logo_icons\atlassian.png" alt="atlassian">
+                                        </div>
+                                        <div class="img-container google gTwo">
+                                            <img src="saas-project-assets\logo_icons\google-A.png" alt="google-A">
+                                        </div>
+                                        <div class="img-container weave">
+                                            <img src="saas-project-assets\logo_icons\weave.png" alt="weave">
+                                        </div>
+                                        <div class="img-container calendar">
+                                            <img src="saas-project-assets\logo_icons\calendar.png" alt="calendar">
+                                        </div>
+                                        <div class="img-container asana">
+                                            <img src="saas-project-assets\logo_icons\asana.png" alt="asana">
+                                        </div>
                                     </div>
-                                    <div class="img-container paypal">
-                                        <img src="saas-project-assets\logo_icons\paypal.jpg" alt="paypal">
-                                    </div>
-                                    <div class="img-container atlassian">
-                                        <img src="saas-project-assets\logo_icons\atlassian.png" alt="atlassian">
-                                    </div>
-                                    <div class="img-container google gTwo">
-                                        <img src="saas-project-assets\logo_icons\google-A.png" alt="google-A">
-                                    </div>
-                                    <div class="img-container weave">
-                                        <img src="saas-project-assets\logo_icons\weave.png" alt="weave">
-                                    </div>
-                                    <div class="img-container calendar">
-                                        <img src="saas-project-assets\logo_icons\calendar.png" alt="calendar">
-                                    </div>
-                                    <div class="img-container asana">
-                                        <img src="saas-project-assets\logo_icons\asana.png" alt="asana">
-                                    </div>
-                                </div>
                             </div>
                         </div> 
                     <!-- </div>               -->
@@ -100,9 +103,11 @@
                 </div> 
                 <!-- ////////////////////////////////////// -->
 
-                <div class="third-section" id="third-section">
-                    <h1 class="font4">Key Benefits</h1>
-                    <p class="font5">Design faster with growing array of beautiful templates</p>
+                <div class="third-section">
+                    <div class="third-section-flex">
+                        <h1 class="font4">Key Benefits</h1>
+                        <p class="font5">Design faster with growing array of beautiful templates</p>
+                    </div>
                 </div> 
                 <!-- ////////////////////////////////////// -->
                 
@@ -377,7 +382,8 @@
                                     <option value="US">USA</option>
                                 </select>
                             </div>
-                            <textarea class="font1" name="comments" id="comments" cols="45" rows="5" placeholder="Tell us more about your project, needs, and timeline, please..."></textarea>
+                            <input class="font1" type="text" name="comments" id="comments">
+                            <!-- <textarea class="font1" name="comments" id="comments" cols="45" rows="5" placeholder="Tell us more about your project, needs, and timeline, please..."></textarea> -->
                             <div class="checkbox-section">
                                 <input type="checkbox" name="marketingOk" id="marketingOk">
                                 <label class="font1" for="marketingOk">Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</label>
@@ -396,7 +402,7 @@
                                 <!--////////////////////////////////////  -->
                 <div class="fifteenth-section">
                     <div class="fifteenth-flex">
-                        <div class="fifteenth-flex-card">
+                        <div class="fifteenth-flex-card" id="contactBox1">
                             <div class="contact-logo">
                                 <img src="saas-project-assets\project_logo\logo.svg" alt="logo">
                             </div>
@@ -410,7 +416,7 @@
                             </div>
                         </div>
 
-                        <div class="fifteenth-flex-card">
+                        <div class="fifteenth-flex-card" id="contactBox2">
                             <h2>Company</h2>
                             <p> <a class="font2" a href="">About</class=a> </p>
                             <div class="hiring">
@@ -421,7 +427,8 @@
                             <p> <a class="font2" a href="">Customers</a></p>
                             <p> <a class="font2" a href="">Hire us</a></p>
                         </div>
-                        <div class="fifteenth-flex-card">
+
+                        <div class="fifteenth-flex-card" id="contactBox3">
                             <h2>Features</h2>
                             <p ><a class="font2" href="">Press</a></p>
                             <p><a class="font2" href=""></a></p>
@@ -429,7 +436,7 @@
                             <p><a class="font2" href="">Intrgrations</a></p>
                             <p><a class="font2" href="">Pricing</a></p>
                         </div>
-                        <div class="fifteenth-flex-card">
+                        <div class="fifteenth-flex-card" id="contactBox4">
                             <h2>Documentation</h2>
                             <p><a class="font2" href="">Support</a></p>
                             <p><a class="font2" href="">Docs</a></p>
@@ -437,7 +444,7 @@
                             <p><a class="font2" href="">API Reference</a></p>
                             <p><a class="font2" href="">Tech Requirements</a></p>
                         </div>
-                        <div class="fifteenth-flex-card">
+                        <div class="fifteenth-flex-card" id="contactBox5">
                             <h2>Resources</h2>
                             <div class="help">
                                 <i class="fa-solid fa-circle-info font1"></i>
@@ -485,7 +492,7 @@
                 </div>
 
                 <div class="section-sixteen-two">
-                    <div class="copywtight">
+                    <div class="copywright">
                         <p class="font2">© Front. 2022 Responsive designs. All rights reserved.</p>
                         <p class="font2">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
                     </div>

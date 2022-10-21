@@ -1,0 +1,142 @@
+@media (max-width:767px) {
+    
+    .page-container {
+        min-width: 47.5rem;
+    }
+    .left-second-section h1 {
+        font-size: var(--26px);
+    }
+
+    .brandGrid {
+        gap: 0rem;
+    }
+
+    .fourth-section-card {
+        width: 23.188rem;
+        height: 17.375rem;
+    }
+
+    .fifth-section-right {
+        height: 27rem;
+    }
+    .hr-container {
+        display: none;
+    }
+
+    .seventh-section {
+        flex-direction: column;
+        margin-top: -2rem;
+    }
+
+    .seventh-section-container {
+        flex-direction: row;
+        margin-top: .5rem;
+        width: 100%;
+    }
+
+    .circle {
+        margin: 0rem 2rem 0rem 3rem;
+    }
+    .seventh-section-container h2 {
+        margin-left: 1rem;
+    }
+
+    .ninth-right p {
+        margin-bottom: 2rem;
+    }
+
+    .eleventh-section-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .eleventh-logo-container {
+        margin-top: .5rem;
+    }
+
+    .tirteenth-left-card {
+        width: 20.5rem;
+    }
+
+    .thirteenth-section-grid {
+        grid-template-columns: 20.5rem;
+        grid-template-rows: repeat(4,13.6875);
+    }
+
+    .fourteenth-section-left {
+        height: 23rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hire-us {
+        text-align: center;
+        width: 39rem;
+    }
+
+    #checkbox-section {
+        flex-direction:row;
+    }
+    .fourteenth-section-right div{
+        flex-direction: column;
+    }    
+
+    .contact-form input,
+    .contact-form select
+        {
+            width: 40rem;
+        }
+    .checkbox-section {
+        width: 40rem;
+    }
+    .checkbox-section input {
+        margin: 0rem -1rem 0rem -19rem;
+    }
+    .checkbox-section label {
+        margin-left: -15rem;
+        width: 37.938rem;
+        }
+
+    .privacy-policy a {
+        display: none;
+    } 
+
+    .fifteenth-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fifteenth-flex-card {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .phone,
+    .yAccount{
+        margin-top: .5rem;
+    }
+
+    .section-sixteen-one {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .terms-socials-right {
+        margin-top: .5rem;
+    }
+
+    [aria-expanded="true"] ~ ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height:100vh;
+        transform: rotateX(0deg);
+        z-index: 11;
+        box-shadow: 0rem -.10rem .5rem .25rem rgb(190, 188, 188);
+        padding: 1rem 1rem 0rem 2rem;
+    }
+
+}

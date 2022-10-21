@@ -44,6 +44,11 @@
     color: var(--midTextColor);
 }
 
+.font6 {
+    font-size: var(--16px);
+    font-weight: 700;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -51,6 +56,8 @@
 
 body {
     margin: 0;
+    width: 100%;
+    
 }    
 
 a {
@@ -98,32 +105,29 @@ img {
 .page-container {
     /* position: relative; */
     height: 100vh;   
-}    
-
-
-/* ////////////////////////////////////// */
-.first-second-section {
     background-image: url("saas-project-assets/project_logo/topSection.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    height: 45rem;
-    width: 100%;
+    background-size: contain;
 }    
+
+/* ////////////////////////////////////// */
+  
 
 .sticky {
     position:fixed;
     top: 0;
     background-color: white;
-    align-self:baseline;
+
 }  
 
-.section-container {
+.first-section-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    padding: 2rem;
+    padding: 0rem 0rem;
+    margin: 0rem;
+    /* position: fixed; */
 }    
 
 .header-nav {
@@ -135,6 +139,10 @@ img {
     z-index: 10;
 }    
 
+.left-head-nav{
+    padding: 2rem;
+}
+
 .projectLogoContainer {
     padding: .5rem;
     height: 4rem;
@@ -144,11 +152,13 @@ img {
 .right-head-nav {
     display: flex;
     align-items: center;
+    padding: 2rem;
 }
 
 .right-head-nav2-flex {
     display: flex;
     width: 100%;
+    padding: 2rem;
 }
 
 .right-head-nav2 {
@@ -242,9 +252,7 @@ img {
 }
 
 .brandGrid {
-    max-width: fit-content;
-    max-height: fit-content;
-    margin-right: 1rem;
+     margin-right: 1rem;
     margin-left: 1rem;
     display: grid;
     grid-template-columns: repeat(9, 3.6rem);
@@ -331,7 +339,7 @@ img {
     align-items: center;
 }
 .third-section-flex {
-    margin-top: 6rem;
+    margin-top: 2rem;
     text-align: center;
     
 }
@@ -543,13 +551,14 @@ img {
 
 .eigth-section-image-container {
     display: flex;
-    width: 60.25rem;
+    width: 100%;
     height: 25.875rem;
     background-image: url("saas-project-assets/banners/banner_two.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
     align-items: center;
+    margin: 2rem;
 }
 
 .play-icon {
@@ -1096,10 +1105,16 @@ img {
     display: none;
 }        
 
-/* /////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////// */
 
+@media (max-width: 1023px){
+    
+    .first-second-section {
+        background-position: right;}
 
-@media (min-width: 768px) and (max-width: 1023px){
     .projectLogoContainer {
         height: 6rem;
         width: 15rem;
@@ -1134,7 +1149,7 @@ img {
     }
 
     .third-section {
-        margin-top: 25rem;
+        margin-top: 2rem;
      }
 
     .fourth-section-flex {
@@ -1165,7 +1180,7 @@ img {
 
     .fifth-section-right {
         width:100%;
-        height: 22.063rem;
+        height: 28rem;
         margin: 0rem 0rem 0rem 0rem;
         padding:0rem;
         justify-content: center;
@@ -1261,7 +1276,7 @@ img {
 
     .fifteenth-flex {
         display: grid;
-        grid-template-columns: repeat(20rem 12rem 12rem);
+        grid-template-columns: 20rem 12rem 12rem;
         grid-template-rows: 1fr 1fr ;
         justify-content: center;
         gap: .5rem;
@@ -1273,7 +1288,7 @@ img {
 
 
     #contactBox1 {grid-area: contactBox1;
-        justify-self: end;
+        justify-self: start;
         width: 20rem;
     }
     #contactBox2 {grid-area: contactBox2;}
@@ -1294,9 +1309,9 @@ img {
         flex-wrap: wrap;
         flex-direction: column;
         background-color: transparent;
-        height:fit-content;
         width: 100%;
         z-index: 10;
+        padding: 2rem 0rem 0rem 0rem;
     }
     
     .hamburger {
@@ -1347,24 +1362,163 @@ img {
     [aria-expanded="true"] ~ ul {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 4rem 4fr;
+        grid-template-rows: 4rem 4rem;
         grid-template-areas: 
         "menu1 menu2 menu3 menu4 menu5"
         "menu6 menu6 menu6 menu6 menu6";
-        align-items: baseline;
-        justify-content: space-between;
         width: 100%;
-        min-height:15rem;
+        min-height:90vh;
         transform: rotateX(0deg);
         z-index: 11;
         box-shadow: 0rem -.10rem .5rem .25rem rgb(190, 188, 188);
         padding: 1rem 1rem 0rem 5rem;
     }
 
-    [aria-expanded="true"] ~ button {
-        grid-row:2/2;
-        grid-column: 1/5;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width:767px) {
+    .page-container {
+        min-width: 47.5rem;
+    }
+    .left-second-section h1 {
+        font-size: var(--26px);
+    }
+
+    .brandGrid {
+        gap: 0rem;
+    }
+
+    .fourth-section-card {
+        width: 23.188rem;
+        height: 17.375rem;
+    }
+
+    .fifth-section-right {
+        height: 27rem;
+    }
+    .hr-container {
+        display: none;
+    }
+
+    .seventh-section {
+        flex-direction: column;
+        margin-top: -2rem;
+    }
+
+    .seventh-section-container {
+        flex-direction: row;
+        margin-top: .5rem;
+        width: 100%;
+    }
+
+    .circle {
+        margin: 0rem 2rem 0rem 3rem;
+    }
+    .seventh-section-container h2 {
+        margin-left: 1rem;
+    }
+
+    .ninth-right p {
+        margin-bottom: 2rem;
+    }
+
+    .eleventh-section-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .eleventh-logo-container {
+        margin-top: .5rem;
+    }
+
+    .tirteenth-left-card {
+        width: 20.5rem;
+    }
+
+    .thirteenth-section-grid {
+        grid-template-columns: 20.5rem;
+        grid-template-rows: repeat(4,13.6875);
+    }
+
+    .fourteenth-section-left {
+        height: 23rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hire-us {
+        text-align: center;
+        width: 39rem;
+    }
+
+    #checkbox-section {
+        flex-direction:row;
+    }
+    .fourteenth-section-right div{
+        flex-direction: column;
+    }    
+
+    .contact-form input,
+    .contact-form select
+        {
+            width: 40rem;
+        }
+    .checkbox-section {
+        width: 40rem;
+    }
+    .checkbox-section input {
+        margin: 0rem -1rem 0rem -19rem;
+    }
+    .checkbox-section label {
+        margin-left: -15rem;
+        width: 37.938rem;
+        }
+
+    .privacy-policy a {
+        display: none;
+    } 
+
+    .fifteenth-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fifteenth-flex-card {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .phone,
+    .yAccount{
+        margin-top: .5rem;
+    }
+
+    .section-sixteen-one {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .terms-socials-right {
+        margin-top: .5rem;
+    }
+
+    [aria-expanded="true"] ~ ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height:100vh;
+        transform: rotateX(0deg);
         z-index: 11;
+        box-shadow: 0rem -.10rem .5rem .25rem rgb(190, 188, 188);
+        padding: 1rem 1rem 0rem 2rem;
     }
 
 }

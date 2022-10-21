@@ -15,9 +15,8 @@
     </head>
     <body>
             <div class="page-container">
-                <div class="first-second-section" >
                     <!-- //////////////////////////// -->
-                    <div class="section-container">
+                    <div class="first-section-container" id="first-section-container">
                         <div class="header-nav" id="header-nav">
                             <div class="left-head-nav">
                                 <div class="projectLogoContainer">
@@ -25,7 +24,7 @@
                                 </div>
                             </div>
                             <nav class="right-head-nav">                             
-                                <ul class = "menu-list">
+                                <ul class="menu-list">
                                     <li><a class="font1" href="Home">Home</a></li>                                   
                                     <li><a class="font1" href="Features">Features</a></li>                                
                                     <li><a class="font1" href="Learn">Learn</a></li>                                  
@@ -100,10 +99,10 @@
                         </div> 
                     <!-- </div>               -->
                     <!-- //////////////////////////// -->                           
-                </div> 
+             
                 <!-- ////////////////////////////////////// -->
 
-                <div class="third-section">
+                <div class="third-section" id="third-section">
                     <div class="third-section-flex">
                         <h1 class="font4">Key Benefits</h1>
                         <p class="font5">Design faster with growing array of beautiful templates</p>
@@ -117,7 +116,7 @@
                             <div class="fourth-section-image-container">
                                 <img src="saas-project-assets\icons\responsive.svg" alt="responsive">
                             </div>
-                            <h3>Responsive</h3>
+                            <h3 class="font6">Responsive</h3>
                             <p class="font1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                             <a class="font3" href="">Learn More</a> 
                         </div>
@@ -126,7 +125,7 @@
                             <div class="fourth-section-image-container">
                                 <img src="saas-project-assets\icons\customizable.svg" alt="responsive">
                             </div>
-                            <h3>Customizable</h3>
+                            <h3 class="font6">Customizable</h3>
                             <p class="font1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                             <a class="font3" href="">Learn More</a>     
                         </div>
@@ -135,7 +134,7 @@
                             <div class="fourth-section-image-container">
                                 <img src="saas-project-assets\icons\premium.svg" alt="responsive">
                             </div>
-                            <h3>Premium<span> <button class="sketch-button">sketch</button> </span></h3> 
+                            <h3 class="font6">Premium<span> <button class="sketch-button">sketch</button> </span></h3> 
                             <p class="font1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                             <a class="font3" href="">Learn More</a>
                         </div>
@@ -144,7 +143,7 @@
                             <div class="fourth-section-image-container">
                                 <img src="saas-project-assets\icons\documentation.svg" alt="responsive">
                             </div>
-                            <h3>Documentation</h3>
+                            <h3 class="font6">Documentation</h3>
                             <p class="font1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                             <a class="font3" href="">Learn More</a>
                         </div>
@@ -363,28 +362,28 @@
                         <form class="contact-form">
                             <p>Fill out the form and we'll be in touch as soon as possible</p>
                             <div>
-                                <input class="font1" type="text" name="firstName" id="firstName" placeholder="First name">
-                                <input class="font1" type="text" name="lastName" id="lastName" placeholder="Last name">
+                                <input class="commonInput font1" type="text" name="firstName" id="firstName" placeholder="First name">
+                                <input class="commonInput font1" type="text" name="lastName" id="lastName" placeholder="Last name">
                             </div>
                             <div>
-                                <input class="font1" type="text" name="firstName2" id="firstName2" placeholder="First name">
-                                <input class="font1" type="text" name="lastName2" id="lastName2" placeholder="Last name">
+                                <input class="commonInput font1" type="text" name="firstName2" id="firstName2" placeholder="First name">
+                                <input class="commonInput font1" type="text" name="lastName2" id="lastName2" placeholder="Last name">
                             </div>
                             <div>
-                                <select class="font1" name="budget" id="budget">
+                                <select class="commonInput font1" name="budget" id="budget">
                                     <option value="Budget">Budget</option>
                                     <option value="0-10,000">$0-$10,000</option>
                                     <option value="10,000-100,000">$10,000-$100,000</option>
                                     <option value="100,000-1,000,000">$100,000-$1,000,000</option>
                                 </select>
-                                <select class="font1" name="country" id="country">
+                                <select class="commonInput font1" name="country" id="country">
                                     <option value="country">Country</option>
                                     <option value="US">USA</option>
                                 </select>
                             </div>
                             <input class="font1" type="text" name="comments" id="comments">
                             <!-- <textarea class="font1" name="comments" id="comments" cols="45" rows="5" placeholder="Tell us more about your project, needs, and timeline, please..."></textarea> -->
-                            <div class="checkbox-section">
+                            <div class="checkbox-section" id="checkbox-section">
                                 <input type="checkbox" name="marketingOk" id="marketingOk">
                                 <label class="font1" for="marketingOk">Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</label>
                             </div>
@@ -504,6 +503,30 @@
                             <!--////////////////////////////////////  -->
 
 <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+    
+    var nav = document.getElementById("first-section-container");
+
+    // Get the nav
+    var thirdSection = document.getElementById("third-section");
+
+    // Get the offset position of the navbar
+    var sticky = thirdSection.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        console.log(sticky)
+    if (window.pageYOffset >= sticky) {
+        nav.classList.add("sticky");
+        }     else {
+            nav.classList.remove("sticky");
+        }
+    }
+
+</script>            
+
+<script>
 
 const navButton = document.querySelector('button[aria-expanded]');
         
@@ -517,27 +540,5 @@ const navButton = document.querySelector('button[aria-expanded]');
 </script>
                             <!--////////////////////////////////////  -->
 
-<script>
-    // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {myFunction()};
-    
-    var nav = document.getElementById("header-nav");
-
-    // Get the nav
-    var thirdSection = document.getElementById("third-section");
-
-    // Get the offset position of the navbar
-    var sticky = thirdSection.offsetTop;
-
-    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-    if (window.pageYOffset >= sticky) {
-        nav.classList.add("sticky");
-        }     else {
-          nav.classList.remove("sticky");
-        }
-    }
-
-</script>            
     </body>
 </html>

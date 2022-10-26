@@ -104,7 +104,8 @@ img {
 
 .page-container {
     /* position: relative; */
-    height: 100vh;   
+    height: 100vh;  
+    width: 100%; 
     background-image: url("saas-project-assets/project_logo/topSection.svg");
     background-repeat: no-repeat;
     background-size: contain;

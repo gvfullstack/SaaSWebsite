@@ -1,0 +1,9 @@
+@media (min-width:1300px) {
+    .page-container {
+        background-size: cover;
+    }    
+
+    .right-head-nav2-flex {
+        padding: 2rem 40rem 2rem 40rem;
+    }
+}
